@@ -1,0 +1,15 @@
+<ion-view view-title="{{title}}">
+    <ion-content ng-class="{expanded:isExpanded}" style="background: url(img/login.jpg) center; background-size: cover;">
+        <div class="content has-header">
+            <div class="list animate-fade-slide-in-right">
+                <div class="list">
+                    <ion-md-input placeholder="项目名称" highlight-color="balanced" type="text" ng-model="item.name"></ion-md-input>
+                    <ion-md-input placeholder="单位" highlight-color="energized" type="text" ng-model="item.note"></ion-md-input>
+                </div>
+                <div class="padding">
+                    <button ng-click="save()" class="button button-full button-assertive ink">保存</button>
+                </div>
+            </div>
+        </div>
+    </ion-content>
+</ion-view>

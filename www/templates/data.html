@@ -1,0 +1,20 @@
+<ion-view view-title="每日数据">
+    <ion-content ng-class="{expanded:isExpanded}">
+            <ionic-datepicker input-obj="datepickerObject">
+      <button class="button   button-block   " > {{datepickerObject.inputDate | date:datepickerObject.dateFormat}}</button>
+    </ionic-datepicker>
+
+        <div class="content has-header">
+
+            <div class="list animate-fade-slide-in-right" >
+                <div class="item item-icon-right" ng-repeat='item in items'>
+
+                    <h2>{{item.name}}:  {{item.num}}({{item.note}} ) </h2>
+                    <span>{{item.ctime}}</span>
+                    <a ng-click="delete($index)" class="icon ion-android-delete muted">
+                </a>
+            </div>
+            </div>
+        </div>
+    </ion-content>
+</ion-view>

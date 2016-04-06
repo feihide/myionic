@@ -1,0 +1,24 @@
+<ion-view view-title="抓取信息">
+    <ion-content ng-class="{expanded:isExpanded}" class="animate-fade-slide-in">
+        <ion-refresher pulling-text="下拉刷新" on-refresh="vm.doRefresh()"></ion-refresher>
+
+        <div class="item card-item" ng-repeat='item in items'>
+            <div ng-hide="hide{{item[0]}}"  class="card stable-bg ink ink-dark">
+                <div class="item item-avatar item-text-wrap"  >
+                    <span class="avatar" style="background-image: url('img/sansa.jpg');" ng-click="goDetail({{item[0]}})"></span>
+                    <strong> <a href="{{item[2]}}">{{item[1]}}</a></strong> ...
+                    <div class="card-footer text-right">
+                        <i class="icon ion-chatbubble positive" ng-click="del({{item[0]}})"></i>
+                        <i class="icon ion-heart assertive" ng-click="favor({{item[0]}})"></i>
+                         <i id="favor{{item[0]}}" >{{item[5]}}</i>
+                        <div class="pull-left">
+                            <i class="icon ion-clock"></i>
+                            {{getLocalTime(item[3])}}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <ion-infinite-scroll ng-if="!vm.moredata" on-infinite="vm.loadMore()" distance="1%" ></ion-infinite-scroll>
+    </ion-content>
+</ion-view>

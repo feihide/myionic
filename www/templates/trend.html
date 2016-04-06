@@ -1,0 +1,25 @@
+<ion-view view-title="走势">
+    <ion-content >
+        <div class="item item-icon-right">
+        <canvas id="line" class="chart chart-line" chart-data="data"
+          chart-labels="labels"
+          chart-click="onClick" >
+          <!-- chart-legend="true" chart-series="series" -->
+
+        </canvas>
+    </div>
+        <div class="item item-icon-right" ng-repeat='item in items'>
+
+            <h2>{{item.name}}:  {{item.num}}({{item.note}} ) </h2>
+            <span>{{item.ctime}}</span>
+            <a ng-click="delete($index)" class="icon ion-android-delete muted">
+        </a>
+        </div>
+ <ion-tabs class="tabs-positive  tabs-icon-only" >
+
+  <ion-tab title="{{p.name}}" ng-repeat="p in project" ng-click="changes($index)">
+
+  </ion-tab>
+</ion-tabs>
+    </ion-content>
+</ion-view>

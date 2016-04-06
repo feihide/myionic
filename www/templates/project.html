@@ -1,0 +1,15 @@
+<ion-view view-title="立项">
+    <ion-content ng-class="{expanded:isExpanded}">
+        <div class="content has-header">
+            <div class="list animate-fade-slide-in-right">
+                <div class="item item-avatar item-icon-right"  ng-repeat='item in items'>
+                     <img src="img/daenerys.jpg">
+                    <h2>{{item.name}}</h2>
+                    <p>单位({{item.note}})  {{item.createDate}}</p>
+                    <a href="#/app/project/edit/{{item.id}}" ><i style="right:60px"class="icon ion-edit muted"></i></a>
+                    <a ng-click="delete($index)" class="icon ion-android-delete muted">
+                </a>
+            </div>
+        </div>
+    </ion-content>
+</ion-view>

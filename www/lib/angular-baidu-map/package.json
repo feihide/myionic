@@ -1,0 +1,83 @@
+{
+  "_args": [
+    [
+      "angular-baidu-map",
+      "/app/myionic/Ionic-Material/demo"
+    ]
+  ],
+  "_cnpm_publish_time": 1434530069724,
+  "_from": "angular-baidu-map@*",
+  "_id": "angular-baidu-map@1.2.1",
+  "_inCache": true,
+  "_installable": true,
+  "_location": "/angular-baidu-map",
+  "_nodeVersion": "0.12.2",
+  "_npmUser": {
+    "email": "leftstick@qq.com",
+    "name": "howard.zuo"
+  },
+  "_npmVersion": "2.7.4",
+  "_phantomChildren": {},
+  "_requested": {
+    "name": "angular-baidu-map",
+    "raw": "angular-baidu-map",
+    "rawSpec": "",
+    "scope": null,
+    "spec": "*",
+    "type": "range"
+  },
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "http://registry.npm.taobao.org/angular-baidu-map/download/angular-baidu-map-1.2.1.tgz",
+  "_shasum": "57060e3a080136ac43366b25cffe60ef7f91f3e6",
+  "_shrinkwrap": null,
+  "_spec": "angular-baidu-map",
+  "_where": "/app/myionic/Ionic-Material/demo",
+  "author": {
+    "name": "Howard.Zuo"
+  },
+  "bugs": {
+    "url": "https://github.com/leftstick/BaiduMapForAngularJS/issues"
+  },
+  "dependencies": {},
+  "description": "A baidu-map directive for AngularJS",
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-jshint": "^1.11.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-uglify": "^1.2.0",
+    "gulp-webserver": "^0.9.1"
+  },
+  "directories": {},
+  "dist": {
+    "noattachment": false,
+    "shasum": "57060e3a080136ac43366b25cffe60ef7f91f3e6",
+    "size": 10639,
+    "tarball": "http://registry.npm.taobao.org/angular-baidu-map/download/angular-baidu-map-1.2.1.tgz"
+  },
+  "gitHead": "0c3ca0acbdaa070decf8dd6bbabfc5f34ecff80b",
+  "homepage": "https://github.com/leftstick/BaiduMapForAngularJS",
+  "keywords": [
+    "angularjs",
+    "baidu-map"
+  ],
+  "license": "MIT",
+  "main": "./src/baiduMap.js",
+  "maintainers": [
+    {
+      "name": "howard.zuo",
+      "email": "leftstick@qq.com"
+    }
+  ],
+  "name": "angular-baidu-map",
+  "optionalDependencies": {},
+  "publish_time": 1434530069724,
+  "readme": "ERROR: No README data found!",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/leftstick/BaiduMapForAngularJS.git"
+  },
+  "scripts": {},
+  "version": "1.2.1"
+}
